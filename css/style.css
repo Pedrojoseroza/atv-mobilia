@@ -22,7 +22,7 @@ header {
  header nav a h1 {
   font-size: 1.9rem;
   font-weight: bold;
-  font-family :'josefina-sans';
+  font-family :'Josefin Sans';
 }
  header nav ul {
   display: flex;
@@ -61,7 +61,72 @@ main .banner div .text {
 }
 main .banner div p button {
   margin: 3vw 0 3vw 0;
-  padding: 0.8rem 3rem 0.8rem 3rem;
+  padding:  0.8rem 3rem;
+  border-radius: 2px; 
+  background-color: #FB2E86;:root {
+  --main-bg-color: brown;
+  font-size: clamp(0.9375rem, 0.9119rem + 0.1136vw, 1rem);
+  font-family: 'lato' 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+a{
+    text-decoration: none; /* remove o sublinhado dos links */
+    color: black; /* altera a cor de todos os links das páginas */
+}
+/*------------------------------------------
+--------------------------------------------
+                    TOPO  
+--------------------------------------------
+--------------------------------------------*/
+header {
+  padding: 3vw 10vw 3vw 10vw;
+}
+ header nav {
+  display: flex;
+  justify-content:space-between;
+}
+ header nav a h1 {
+  font-size: 1.9rem;
+  font-weight: bold;
+  font-family :'Josefin Sans';
+}
+ header nav ul {
+  display: flex;
+  align-items: center;
+}
+header nav ul li {
+  margin: 0px 10px 0 10px;
+}
+header nav ul li .actual {
+  color: #FB2E86;
+}
+/*------------------------------------------
+--------------------------------------------
+                    BANNER
+--------------------------------------------
+--------------------------------------------*/
+main .banner {
+  background-color: #F2F0FF;
+  display: flex;
+}
+main .banner {
+  padding: 3vw 10vw 3vw 10vw;;
+}
+main .banner div .subtitle {
+  margin: 10px 10px 10px 0px;
+  color: #FB2E86;
+  font-weight: bold;
+}
+main .banner div h2 {
+  font-weight: bold;
+  font-size: 3.0rem;
+  margin: 4vw 0 4vw 0;
+}
+main .banner div .text {
+  color: #8A8FB9; 
+}
+main .banner div p button {
+  margin: 3vw 0 3vw 0;
+  padding:  0.8rem 3rem;
   border-radius: 2px; 
   background-color: #FB2E86;
   color: #ffffff;
@@ -79,8 +144,8 @@ main .banner div p button {
     padding: 3vw 10vw 3vw 10vw;
   }
   .produtos h2 {
-    font-family: 'josefine-sans';
-    font-size: xx-large;
+    font-family: 'Josefin sans';
+    font-size: 2rem;
     font-weight: bold;
     text-align: center;
     color: #1A0B5B;
@@ -88,7 +153,6 @@ main .banner div p button {
   }
 .produtos ul {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   justify-content: space-between;
 
@@ -99,15 +163,331 @@ main .banner div p button {
 .produtos ul li p {
   background-color: #F7F7F7;
   text-align: center;
+  margin: 0.25vw;
+}
+.produtos ul li p img {
+  height: 13vw;
 }
 .produtos ul li h3 {
   text-align: left;
   color: #151875;
-  text-decoration: underline;
-  text-decoration-color: #EEEFFB ;
-  
 }
-.produtos ul li span {
+
+/*---------------------------------------:root {
+  --main-bg-color: brown;
+  font-size: clamp(0.9375rem, 0.9119rem + 0.1136vw, 1rem);
+  font-family: 'lato' 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+a{
+    text-decoration: none; /* remove o sublinhado dos links */
+    color: black; /* altera a cor de todos os links das páginas */
+}
+/*------------------------------------------
+--------------------------------------------
+                    TOPO  
+--------------------------------------------
+--------------------------------------------*/
+header {
+  padding: 3vw 10vw 3vw 10vw;
+}
+ header nav {
+  display: flex;
+  justify-content:space-between;
+}
+ header nav a h1 {
+  font-size: 1.9rem;
+  font-weight: bold;
+  font-family :'Josefin Sans';
+}
+ header nav ul {
+  display: flex;
+  align-items: center;
+}
+header nav ul li {
+  margin: 0px 10px 0 10px;
+}
+header nav ul li .actual {
+  color: #FB2E86;
+}
+/*------------------------------------------
+--------------------------------------------
+                    BANNER
+--------------------------------------------
+--------------------------------------------*/
+main .banner {
+  background-color: #F2F0FF;
+  display: flex;
+}
+main .banner {
+  padding: 3vw 10vw 3vw 10vw;;
+}
+main .banner div .subtitle {
+  margin: 10px 10px 10px 0px;
+  color: #FB2E86;
+  font-weight: bold;
+}
+main .banner div h2 {
+  font-weight: bold;
+  font-size: 3.0rem;
+  margin: 4vw 0 4vw 0;
+}
+main .banner div .text {
+  color: #8A8FB9; 
+}
+main .banner div p button {
+  margin: 3vw 0 3vw 0;
+  padding:  0.8rem 3rem;
+  border-radius: 2px; 
+  background-color: #FB2E86;
+  color: #ffffff;
+}
+ .banner div.imagem {
+  width: 40%; 
+  margin: 0 0 0 10%;
+}
+/*------------------------------------------
+--------------------------------------------
+                    PRODUTOS
+--------------------------------------------
+--------------------------------------------*/
+.produtos {
+    padding: 3vw 10vw 3vw 10vw;
+  }
+  .produtos h2 {
+    font-family: 'Josefin sans';
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #1A0B5B;
+      margin: 4vw 0 4vw 0;
+  }
+.produtos ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+.produtos ul li {
+  width: 30%;
+}
+.produtos ul li p {
+  background-color: #F7F7F7;
+  text-align: center;
+  margin: 0.25vw;
+}
+.produtos ul li p img {
+  height: 13vw;
+}
+.produtos ul li h3 {
   text-align: left;
   color: #151875;
+}
+
+/*------------------------------------------
+--------------------------------------------
+                    CONVITE
+--------------------------------------------
+--------------------------------------------*/
+.convites {
+  padding: 3vw 30vw;
+  background: url(../src/images/back-section-update.png);
+  background-position: center; 
+  text-align: center;
+
+}
+.convites h2 {
+  font-family: 'Josefin sans';
+  font-size: 2rem;
+  font-weight: bold;
+  color: #151875; 
+}
+.convites p button {
+  margin: 3vw 0 3vw 0;
+  padding:  0.8rem 3rem;
+  border-radius: 2px; 
+  background-color: #FB2E86;
+  color: #ffffff;
+}
+
+/*------------------------------------------
+--------------------------------------------
+                    RODAPE
+--------------------------------------------
+--------------------------------------------*/
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 3vw 10vw 10vw 10vw;
+  background-color: #EEEFFB;
+}
+footer div h2 {
+  font-family: 'Josefin sans';
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 0 1vw 0;
+}
+footer div p {
+  color: #8A8FB9;
+}
+footer div h3{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 0 1vw 0;
+}
+footer div ul li p a {
+   color: #8A8FB9;
+   line-height: 2rem;
+}---
+--------------------------------------------
+                    CONVITE
+--------------------------------------------
+--------------------------------------------*/
+.convites {
+  padding: 3vw 30vw;
+  background: url(../src/images/back-section-update.png);
+  background-position: center; 
+  text-align: center;
+
+}
+.convites h2 {
+  font-family: 'Josefin sans';
+  font-size: 2rem;
+  font-weight: bold;
+  color: #151875; 
+}
+.convites p button {
+  margin: 3vw 0 3vw 0;
+  padding:  0.8rem 3rem;
+  border-radius: 2px; 
+  background-color: #FB2E86;
+  color: #ffffff;
+}
+
+/*------------------------------------------
+--------------------------------------------
+                    RODAPE
+--------------------------------------------
+--------------------------------------------*/
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 3vw 10vw 10vw 10vw;
+  background-color: #EEEFFB;
+}
+footer div h2 {
+  font-family: 'Josefin sans';
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 0 1vw 0;
+}
+footer div p {
+  color: #8A8FB9;
+}
+footer div h3{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 0 1vw 0;
+}
+footer div ul li p a {
+   color: #8A8FB9;
+   line-height: 2rem;
+}
+  color: #ffffff;
+}
+ .banner div.imagem {
+  width: 40%; 
+  margin: 0 0 0 10%;
+}
+/*------------------------------------------
+--------------------------------------------
+                    PRODUTOS
+--------------------------------------------
+--------------------------------------------*/
+.produtos {
+    padding: 3vw 10vw 3vw 10vw;
+  }
+  .produtos h2 {
+    font-family: 'Josefin sans';
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #1A0B5B;
+      margin: 4vw 0 4vw 0;
+  }
+.produtos ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+.produtos ul li {
+  width: 30%;
+}
+.produtos ul li p {
+  background-color: #F7F7F7;
+  text-align: center;
+  margin: 0.25vw;
+}
+.produtos ul li p img {
+  height: 13vw;
+}
+.produtos ul li h3 {
+  text-align: left;
+  color: #151875;
+}
+
+/*------------------------------------------
+--------------------------------------------
+                    CONVITE
+--------------------------------------------
+--------------------------------------------*/
+.convites {
+  padding: 3vw 30vw;
+  background: url(../src/images/back-section-update.png);
+  background-position: center; 
+  text-align: center;
+
+}
+.convites h2 {
+  font-family: 'Josefin sans';
+  font-size: 2rem;
+  font-weight: bold;
+  color: #151875; 
+}
+.convites p button {
+  margin: 3vw 0 3vw 0;
+  padding:  0.8rem 3rem;
+  border-radius: 2px; 
+  background-color: #FB2E86;
+  color: #ffffff;
+}
+
+/*------------------------------------------
+--------------------------------------------
+                    RODAPE
+--------------------------------------------
+--------------------------------------------*/
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 3vw 10vw 10vw 10vw;
+  background-color: #EEEFFB;
+}
+footer div h2 {
+  font-family: 'Josefin sans';
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 0 1vw 0;
+}
+footer div p {
+  color: #8A8FB9;
+}
+footer div h3{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 0 1vw 0;
+}
+footer div ul li p a {
+   color: #8A8FB9;
+   line-height: 2rem;
 }
