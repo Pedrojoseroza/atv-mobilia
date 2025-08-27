@@ -103,5 +103,11 @@ main .banner div p button {
 .produtos ul li h3 {
   text-align: left;
   color: #151875;
-
+  text-decoration: underline;
+  text-decoration-color: #EEEFFB ;
+  
+}
+.produtos ul li span {
+  text-align: left;
+  color: #151875;
 }
